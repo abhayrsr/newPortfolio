@@ -1,0 +1,584 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 4vw; /* Adjust padding to create spacing */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 4vw; /* Adjust padding to create spacing */
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 2.5%;
+}
+
+.nav-home h1{
+    font-family: "Calibri", sans-serif;
+    font-size: 3vw;
+    color: whitesmoke;
+}
+.nav h1 {
+    font-family: "Calibri", sans-serif;
+    font-size: 3vw;
+    color: whitesmoke;
+}
+
+.links {
+    font-family: "Calibri", sans-serif;
+    display: flex;
+    gap: 3vw;
+    margin: 2px;
+    font-size: 1.5vw;
+    color: whitesmoke;
+}
+
+.links i{
+    font-weight: bolder;
+    display: none;
+}
+
+.links a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(253, 187, 66);
+    text-decoration: underline;
+}
+/* Home Page CSS Starts*/
+.content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.content .left{
+    font-family: 'Calibri', sans-serif;
+    padding: 5vw 4vw;
+    width: 45%;
+    height: 100px;
+    display: block;
+    align-items: center;
+    position: relative;
+    line-height: 7vw;
+    
+}
+
+.content .right {
+    width: 45%; /* Adjust this width to your preference */
+    padding: 5vw 1vw 5vw 10vw;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center vertically */
+    overflow:hidden
+}
+
+.content .right .image-container{
+    width: 40vw; /* Set the width of the container */
+    height: 80vh; /* Set the height of the container */
+    overflow: hidden;
+}
+
+.content .right .image-container .cropped-image{
+    width: 100%; /* Set the width of the image to fill the container */
+    height: 100%; /* Maintain the aspect ratio of the image */
+    display: block;
+    object-fit: cover;
+}
+
+.content .right img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.left h3{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: rgb(253, 187, 66)
+}
+
+.left h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 8vw;
+    color: whitesmoke
+}
+
+.left h1 span{
+    font-family: "Calibri", sans-serif;
+    color:rgb(253, 187, 66);
+}
+
+.left h2{
+    font-family: "Open Sans", sans-serif;;
+    font-size: 2.5vw;
+    color: whitesmoke;
+}
+
+.left button{
+    border-radius: 2em;
+    padding: 1vw;
+    letter-spacing: 0.1vw;
+}
+ .hire{
+    background-color: rgb(253, 187, 66);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.works{
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/* Home Page CSS Ends */
+
+/* About Page CSS Starts */
+.about{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .left{
+    padding: 2vh 2vw;
+    width: 50%;
+    padding: 5vw 4vw;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center vertically */
+    overflow:hidden 
+}
+
+.about .left .image-container{
+    width: 40vw; /* Set the width of the container */
+    height: 80vh; /* Set the height of the container */
+    overflow: hidden;
+}
+
+.about .left .image-container .cropped-image{
+    width: 100%; /* Set the width of the image to fill the container */
+    height: 100%; /* Maintain the aspect ratio of the image */
+    display: block;
+    object-fit: cover;
+}
+
+.about .left img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about .right{
+    display: block;
+    align-items: center;
+    position: relative;
+    color: whitesmoke;
+}
+
+.about .right h1{
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style: normal;
+    font-size: 10vw;
+    opacity: 0.5; /* Adjust the opacity value to make the text dimmer */
+    color: hsla(0, 1%, 40%, 0.7); 
+    position: relative;
+    right: 2%;
+    bottom: 20%;
+    z-index: 1;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.about .right h2{
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style: normal;
+    font-size: 4vw;
+    z-index: 2;
+    margin-top: 0; /* Remove the default margin */
+    margin-bottom: 0; /* Remove the default margin */
+    position: relative;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.about .right p{
+    font-family: "Roboto", sans-serif;
+    font-weight:300;
+    font-style: normal;
+    z-index: 1;
+    bottom: 43%;
+    color: hsla(0, 3%, 88%, 0.7); 
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    margin: 1vw;
+}
+
+.about .right .list{
+    list-style-type: none;
+    line-height: 8vh;
+    font-size: 2vw;
+    padding: 1vw;
+    margin: 1vw;
+    position: relative;
+    bottom: 35%;
+    
+}
+
+.about .right .list li span{
+    font-weight: 300;
+    color: hsla(0, 3%, 88%, 0.7); 
+}
+
+.about .right h3{
+    padding: 1vw 1vw 0vw 1vw;
+    margin: 1vw 1vw 0vw 1vw;
+    font-weight: 300;
+    position: relative;
+    bottom: 35%;
+}
+
+.about .right h3 span{
+    color:rgb(253, 187, 66)
+}
+
+.about .right button{
+    font-family: 'Calibri', sans-serif;
+    font-size: 1vw;
+    padding: 1vw 1vw 0vw 1vw;
+    margin: 1vw 1vw 0vw 1vw;
+    position: relative;
+    bottom: 35%;
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: rgb(253, 187, 66);
+    cursor: pointer;
+}
+
+
+/* About Page CSS Ends */
+
+ /* Skills Page CSS Starts*/
+
+ .skills{
+    height: 80vh;
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills .top{
+    color: whitesmoke;
+    display: grid;
+    justify-content: center;
+}
+
+.skills .top h1{
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style: normal;
+    font-size: 10vw;
+    opacity: 0.5; /* Adjust the opacity value to make the text dimmer */
+    color: hsla(0, 1%, 40%, 0.7); 
+    position: relative;
+    right: 10%;
+    bottom: 55%;
+    z-index: 1;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.skills .top h2{
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style: normal;
+    font-size: 4vw;
+    z-index: 2;
+    margin-top: 0; /* Remove the default margin */
+    margin-bottom: 0; /* Remove the default margin */
+    position: relative;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.skills .top p{
+    font-family: "Roboto", sans-serif;
+    font-weight:300;
+    font-style: normal;
+    z-index: 1;
+    bottom:1200%;
+    color: hsla(0, 3%, 88%, 0.7); 
+    position: relative;
+}
+
+.skills .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: whitesmoke;
+    padding: 0vw 6vw 0vw 6vw;
+}
+
+.skills .bottom .section-1{
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style: normal;
+    left: 10%;
+    position: relative;
+    width: 30%;
+    margin: 6vw auto;
+    color:#fff;
+    padding: 2vw;
+}
+
+.skills .bottom .section-2{
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style: normal;
+    position: relative;
+    right: 35%;
+}
+
+.skills .bottom .section-1 span:first-child {
+    position: absolute; /* Position the line absolutely */
+    bottom: 0; /* Align the line to the bottom of the <h3> */
+    height: .2vw; /* Set the height of the line */
+    transition: width 0.5s ease; /* Add transition effect */
+}
+
+.skills .bottom .section-1 h3:hover span {
+    width: calc(100% - 50px); /* On hover, set width to 100% - 50px */
+}
+
+.skills .bottom .section-1 h3 span:last-child {
+    font-size: 14px; /* Adjust font size as needed */
+    margin-left: 10px; /* Adjust spacing as needed */
+}
+
+ /* Skills Page CSS Ends */
+
+/* Mobile CSS */
+@media (max-width: 1000px){
+
+    .nav-home{
+        bottom: 2.9%;
+    }
+    .nav h1{
+        font-size: 10vw;
+    }
+
+    .nav-home h1{
+        font-size: 10vw;
+    }
+
+    .links a{
+        font-size: 4vw;
+        display: none;
+        z-index: 2;
+        background-color: black;
+    }
+
+    .links i{
+        display: block;
+        font-size: 6vw;
+        cursor: pointer;
+    }
+
+    /* Home Page Mobile CSS Starts */
+
+    .content{
+        display: flex;
+        justify-content: center;
+        position:relative;
+        padding: 2vw;
+    }
+
+    .content .left{
+        width: 80%;
+        height: 100px;
+        line-height: 11vw;
+        padding: 0;
+    }
+    .content .right {
+        width: auto; /* Reset width for mobile screens */
+        padding: 0; /* Remove padding */
+        justify-content: initial; /* Reset alignment */
+        align-items: initial; /* Reset alignment */
+    }
+
+    .content .right .image-container,
+    .content .right .image-container .cropped-image {
+        display: none; /* Hide image container and its contents on mobile */
+    }
+
+    .content .right img {
+        max-width: none; /* Reset max-width for mobile screens */
+    }
+
+    .left h3{
+        font-size: 3.3vw;
+    }
+
+    .left h1{
+        font-size: 14vw;
+
+    }
+
+    .left h2{
+        font-size: 4vw;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.show{
+        width: 25vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        z-index: 100vh;
+        display: grid;
+    }
+
+    .mobile-menu.show a{
+        font-family: "Calibri", sans-serif;
+        color:whitesmoke;
+        padding: 3vh 2vw;
+        z-index: 100;
+        text-decoration: none;
+        font-size: x-large;
+
+    }
+
+    .mobile-menu.show a:hover{
+        color: rgb(253, 187, 66);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    /* Home Page Mobile CSS Ends */
+
+    /* About Page Mobile CSS Starts */
+    .about{
+        display: grid;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .about .left{
+        padding: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .about .left .image-container, .about .left .image-container .cropped-image, .about .left img {
+       display: none;
+    }
+    
+    .about .right{
+        padding: 2vh 2vw;
+        display: block;
+        align-items: center;
+        position: relative;
+        color: whitesmoke;
+    }
+    
+    .about .right h1{
+        font-size: 22vw;
+        position: relative;
+        right: 2%;
+        bottom: 15%;
+        z-index: 1;
+        padding: 1vw;
+        margin: 1vw;
+    }
+    
+    .about .right h2{
+        font-size: 10vw;
+    }
+    
+    .about .right p{
+        font-size: 3vw;
+        bottom: 30%;
+        z-index: 1;
+    }
+    
+    .about .right .list{
+        font-size: 4vw;
+        bottom: 25%;
+    }
+
+    
+    .about .right h3{
+        font-size: 4vw;
+        bottom: 20%;
+    }
+    
+    .about .right button{
+        font-family: 'Calibri', sans-serif;
+        font-size: 3vw;
+        padding: 2vw 2vw 2vw 2vw;
+        position: relative;
+        bottom: 20%;
+        border-radius: 2vw;
+        background-color: rgb(253, 187, 66);
+        cursor: pointer;
+    }
+    /* About Page Mobile CSS Ends */
+
+}
+
+
