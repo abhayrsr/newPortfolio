@@ -16,3 +16,15 @@ document.addEventListener("click", function(event) {
         mobileMenu.classList.remove("show");
     }
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    const progressBars = document.querySelectorAll('.progress');
+
+    progressBars.forEach(progress => {
+        console.log(progress)
+        const percentage = parseFloat(progress.parentElement.querySelector('.second-span').textContent);
+        console.log(percentage)
+        progress.style.width = `${percentage}%`;
+        progress.classList.add('fill-animation');
+    });
+});
