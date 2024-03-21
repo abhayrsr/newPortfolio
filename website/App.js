@@ -28,3 +28,26 @@ document.addEventListener("DOMContentLoaded", function() {
         progress.classList.add('fill-animation');
     });
 });
+
+
+const currentUrl = window.location.href;
+
+const navLinks = document.querySelectorAll('.nav .links a');
+
+navLinks.forEach(link => {
+    
+    if (link.href === currentUrl) {
+        link.classList.add('active');
+    }
+});
+
+
+const homeUrl = window.location.href;
+
+const navHomeLink = document.querySelectorAll('.nav-home .links a');
+
+navHomeLink.forEach(link =>{
+    if(link.href === homeUrl){
+        link.classList.add('active');
+    }
+})
