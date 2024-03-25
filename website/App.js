@@ -2,6 +2,7 @@
 function toggleMobileMenu() {
     var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
     mobileMenu.classList.toggle("show");
+    document.querySelector('.overlay').classList.toggle('show');
 }
 
 // Add click event listener to the menu icon

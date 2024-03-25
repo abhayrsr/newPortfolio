@@ -598,15 +598,54 @@ a:hover{
 /* Mobile CSS */
 @media (max-width: 1000px){
 
+    .nav .links .menu-icon {
+        position: fixed; /* Ensure the menu icon stays fixed */
+        top: 20px; /* Adjust the top position as needed */
+        right: 20px; /* Adjust the right position as needed */
+        z-index: 1000; /* Ensure the menu icon is above the overlay */
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        z-index: 1000; /* Ensure it appears above other elements */
+        display: none; /* Initially hidden */
+    }
+    
+    .mobile-menu {
+        /* Your existing styles */
+        z-index: 1001; /* Ensure it appears above the overlay */
+    }
+
+    .overlay.show {
+        display: block; /* Show the overlay when the mobile menu is open */
+    }
+
     .nav-home{
         bottom: 2.9%;
     }
+
     .nav h1{
         font-size: 10vw;
     }
 
     .nav-home h1{
         font-size: 10vw;
+    }
+
+    .links{
+        position: fixed;
+         top: 0;
+         left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        z-index: 999; /* Ensure it's above other content */
+        display: none; /* Initially hidden */
     }
 
     .links a{
@@ -809,6 +848,24 @@ a:hover{
         margin: 1vw 0; /* Adjust margin as needed */
     }
     /* Skill Page Mobile CSS Ends */
+
+    /* Services Page Mobile CSS Starts */
+
+    .services{
+        width: 100%;
+    }
+
+    .services .top{
+        width: 0%;
+        display: none;
+    }
+
+    .service .bottom{
+        width: 100%;
+        height: 80vh;
+    }
+
+    /* Services Page Mobile CSS Ends */
 
 }
 
